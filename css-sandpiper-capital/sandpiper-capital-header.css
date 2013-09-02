@@ -1,0 +1,8 @@
+﻿header{background:linear-gradient(to bottom, #666666 16%, #595959 100%) repeat scroll 0 0 transparent;color:#efefef;width:100%;}
+header p{font-size:12px;letter-spacing:.03em;text-align:right;}
+header .wrap{padding-top:15px;padding-bottom:15px;}
+header nav .wrap{padding-top:10px;padding-bottom:10px;}
+header nav{background-color:#575757;}
+header nav a{color:#dedede;letter-spacing:.04em;margin-right:15px;text-decoration:none;text-rendering:optimizeLegibility}
+header nav a:hover{color:#ffffff;}
+nav .active{color:#ffffff;border-bottom:2px solid #dec8a1;}
