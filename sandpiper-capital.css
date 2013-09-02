@@ -1,0 +1,49 @@
+﻿h1, h2, h3, h4, h5, header a{font-family:'Quattrocento',serif;letter-spacing:.04em;text-rendering:optimizeLegibility;}
+body{background-color:#efefef;font-family:'Open Sans',sans-serif;letter-spacing:.03em;text-rendering:optimizeLegibility;min-width:960px;}
+
+
+.banner{letter-spacing:.03em;height:400px;overflow:hidden;}
+.banner img{margin-top:-285px;}
+.banner .callout{position: absolute;left: 0px;top:493px;padding:8px 20px;background-color: #b55400;width:595px;}
+.banner h2, .content .wrap .item h2{color:#ffffff;font-weight:bold;font-size:20px;padding-bottom:10px;}
+/*.banner h2 span a{color:#dedede;font-family:Open Sans,sans-serif;font-weight:normal;font-size:14px;margin-left:15px;text-decoration:none;}
+.banner h2 span a:hover{color:#ffffff;}*/
+.banner p, .content .wrap .item p{font-size:14px;color:#eee;}
+
+
+#home .content{margin-top:75px;letter-spacing:.03em;}
+.content .wrap, footer .wrap{padding-top:15px;padding-bottom:15px;}
+.content blockquote{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-top:1px solid #b55400;
+                    border-left:1px solid #b55400;border-right:1px solid #b55400;border-bottom:3px solid #b55400;font-size:13px;
+                    padding:10px 20px;width:618px;}
+.content h2{border-bottom:1px dotted rgba(181, 84, 0,.5);color:#B55400;font-size:18px;font-weight:bold;padding-top:10px;
+            padding-bottom:4px;}
+.content p{margin:15px 0;font-size:13px;line-height:20px;}
+.content ul{margin-bottom:20px;}
+.content ul li{font-size:13px;line-height:20px;list-style-type:square;margin:15px 0px 15px 45px;}
+.content ul li a{color:#b55400;text-decoration:none;}
+.content ul li a:hover{color:#e86c00;}
+
+.cta{background-color:#dedede;margin-top:15px;padding:5px 25px;}
+.cta p{margin:10px 15px;}
+.cta img{margin:0 auto;padding-top:15px;width:250px;}
+.cta a{color:#B55400;text-decoration:none;}
+.cta a:hover{color:#cf6006;}
+
+
+.sidebar{background-color:#dedede;margin-top:25px;padding:5px 25px;}
+.sidebar h3{border-bottom:1px dotted rgba(181, 84, 0,.5);color:#B55400;font-size:14px;font-weight:bold;padding:15px 0 2px;}
+.sidebar ul li{list-style-type:none;}
+.content .sidebar ul li a{color:#000;text-decoration:none;}
+.content .sidebar ul li a:hover{color:#555;}
+.content .sidebar ul{margin-top:10px;}
+.content .sidebar ul li{margin:0 0 6px 0;}
+
+
+#services .content h1{background-color:#B55400;color:#ffffff;font-size:20px;font-weight:bold;margin-right:15px;padding:20px;}
+
+
+footer{background:linear-gradient(to bottom, #666666 16%, #595959 100%) repeat scroll 0 0 transparent;color:#efefef;width:100%;}
+footer p, footer ul li{font-size:12px;letter-spacing:.03em;}
+footer a, footer ul li a{color:#dec8a1;text-decoration:none;}
+footer a:hover{color:#f7dfb5;}
