@@ -21,7 +21,7 @@ header nav {
 }
 header nav a {
   color: rgba(0, 0, 0, 0.5);
-  margin-right: 25px;
+  margin-right: 35px;
   font-size: 0.9em;
   text-decoration: none;
 
@@ -38,4 +38,28 @@ nav .active,
 nav .active:hover {
   color: #B55400;
   border-bottom: 2px solid #B55400;
+}
+
+header nav img {
+  display: inline-block;
+  margin: 2px 35px 0px 0px !important;
+  vertical-align: top;
+  -webkit-transition: width 0.2s ease;
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  -ms-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+nav.affix {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+nav.affix + .placeholder {
+  display: block;
+  height: 49px;
+}
+header nav.affix img {
 }

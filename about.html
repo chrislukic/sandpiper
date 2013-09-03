@@ -14,6 +14,22 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/header.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/affix.js"></script>
+  <script type="text/javascript">
+    $(document)
+      .ready(function() {
+        $('nav.grid')
+          .affix({
+            offset: {
+              top    : $('nav.grid').offset().top,
+              bottom : $('footer').outerHeight(true)
+            }
+          })
+        ;
+      })
+    ;
+  </script>
 </head>
 <body id="about">
 <div class="page">
@@ -47,6 +63,7 @@
         <a href="contact.html">Contact Us</a>
       </div>
     </nav>
+    <div class="placeholder"></div>
   </header>
   <div class="content">
     <div class="ui responsive grid">
@@ -86,7 +103,7 @@
       <span itemprop="name" style="font-weight:bold;">Sandpiper Capital</span> |
       <span itemprop="street-address">1613 Laskin Road, Suite 200</span> |
       <span itemprop="locality">Virginia Beach</span>,
-      <span itemprop="region">VA</span> 
+      <span itemprop="region">VA</span>
       <span itemprop="postal-code">23454</span> |
       Phone: <span itemprop="tel">(757) 962-4596</span> |
       <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">

@@ -15,24 +15,9 @@ h1, h2, h3, h4, h5, header p {
   text-rendering: optimizeLegibility;
 }
 
-nav {
- Font-family: 'Montserrat', serif;
-  text-rendering: optimizeLegibility;
-}
-nav.affix {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
-}
-nav.affix + .placeholder {
-  display: block;
-  height: 49px;
-}
-
 body, .menu {
   background-color: #FFFFFF;
+  color: #555555;
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility;
 }
@@ -44,6 +29,11 @@ p {
 img {
   display: block;
   max-width: 100%;
+}
+
+nav {
+ Font-family: 'Montserrat', serif;
+  text-rendering: optimizeLegibility;
 }
 
 body > .page {
@@ -146,6 +136,7 @@ h5 {
 *******************************/
 
 .banner {
+  display: none;
   height: 250px;
   overflow: hidden;
 
@@ -297,6 +288,12 @@ footer span {
   display: inline-block;
   font-size: 12px;
 }
+footer .left {
+  float: left;
+}
+footer .right {
+  float: right;
+}
 
 footer .ui.sitemap > .section {
   font-size: 12px;
@@ -309,10 +306,19 @@ footer .ui.sitemap > .section {
 #home header img {
   margin-top: 15px;
 }
-#home address {
+#home header address {
   margin-top: 20px;
 }
 
+#home .feature.grid {
+  background-color: #EAEAEA;
+  margin: 30px 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+#home .content b {
+  color: #B55400;
+}
 
 /*******************************
             About
