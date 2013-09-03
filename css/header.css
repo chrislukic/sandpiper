@@ -1,8 +1,41 @@
-﻿header{background:linear-gradient(to bottom, #666666 16%, #595959 100%) repeat scroll 0 0 transparent;color:#efefef;width:100%;}
-header p{font-size:12px;letter-spacing:.03em;text-align:right;}
-header .wrap{padding-top:15px;padding-bottom:15px;}
-header nav .wrap{padding-top:10px;padding-bottom:10px;}
-header nav{background-color:#575757;}
-header nav a{color:#dedede;letter-spacing:.04em;margin-right:15px;text-decoration:none;text-rendering:optimizeLegibility}
-header nav a:hover{color:#ffffff;}
-nav .active{color:#ffffff;border-bottom:2px solid #dec8a1;}
+﻿header {
+  background-color:  #FFFFFF;
+  color: #555555;
+  width: 100%;
+}
+header p {
+  font-size: 12px;
+  letter-spacing: .03em;
+  text-align: right;
+}
+header .wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header nav .wrap {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header nav {
+  background-color: #575757;
+}
+header nav a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  letter-spacing: .04em;
+  margin-right: 25px;
+  text-decoration: none;
+
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+header nav a:hover {
+  color: #FFFFFF;
+}
+nav .active {
+  color: #FFFFFF;
+  border-bottom: 2px solid #dec8a1;
+}
