@@ -15,9 +15,20 @@ h1, h2, h3, h4, h5, header p {
   text-rendering: optimizeLegibility;
 }
 
-nav{
+nav {
  Font-family: 'Montserrat', serif;
   text-rendering: optimizeLegibility;
+}
+nav.affix {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+nav.affix + .placeholder {
+  display: block;
+  height: 49px;
 }
 
 body, .menu {
@@ -90,6 +101,7 @@ h5 {
   margin: 2em 0em 1rem;
   padding: 0em;
 
+  color: #B55400;
   font-size: 1.33em;
   font-weight: bold;
   line-height: 1.33;
@@ -114,14 +126,13 @@ h5:last-child {
 ---------------*/
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 h2 {
-  font-size: 1.33rem;
-  color: #B55400;
+  font-size: 1.5rem;
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.33rem;
 }
 h4 {
   font-size: 1.1rem;
@@ -162,6 +173,7 @@ h5 {
   color: #eee;
 }
 
+
 /*******************************
           Home Content
 *******************************/
@@ -193,6 +205,17 @@ h5 {
 }
 .content ul li a: hover {
   color: #e86c00;
+}
+
+
+.content ul.divided > li {
+  margin: 8px 0px 0px;
+  padding: 8px 0px 0px;
+  list-style-type: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.content ul.divided li:first-child {
+  border-top: none;
 }
 
 

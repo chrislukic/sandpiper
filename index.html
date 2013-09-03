@@ -17,6 +17,23 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/header.css" />
+
+  <script src="js/jquery.js"></script>
+  <script src="js/affix.js"></script>
+  <script type="text/javascript">
+    $(document)
+      .ready(function() {
+        $('nav.grid')
+          .affix({
+            offset: {
+              top    : $('nav.grid').offset().top,
+              bottom : $('footer').outerHeight(true)
+            }
+          })
+        ;
+      })
+    ;
+  </script>
 </head>
 <body id="home">
 <div class="page">
@@ -62,12 +79,12 @@
         <a href="contact.html">Contact Us</a>
       </div>
     </nav>
+    <div class="placeholder"></div>
   </header>
   <div class="content">
-    <div class="ui responsive grid">
+    <div class="ui responsive stackable grid">
       <div class="ui ten wide column">
-        <h1><i class="icon lightning"></i>
-          Assertive investment management</h1>
+        <h1>Assertive investment management</h1>
         <p>
           Sandpiper Capital was founded with the philosophy of bringing professional day-to-day
           portfolio management to households that have previously been excluded by the million
@@ -86,7 +103,7 @@
           returns on investment. Among the services we offer to both private and institutional
           investors include:
         </p>
-        <ul>
+        <ul class="divided">
           <li><b>Discretionary investment services</b> comprised
             of customized strategic asset allocation designed to suit your risk tolerance,
             investment objectives, and financial circumstances.
@@ -124,28 +141,31 @@
         </div>
         <h3>Recent White Papers</h3>
         <div class="ui fluid vertical menu">
-          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Blog post 1</a>
-          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Blog post 2</a>
-          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Blog post 3</a>
-          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Blog post 4</a>
-          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Blog post 5</a>
+          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Q2 Report</a>
+          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Annual Feedback</a>
+          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Q1 Report</a>
+          <a class="item" href="#" target="_blank"><i class="doc icon"></i> Q4 Report</a>
+          <a class="item" href="#" target="_blank"><i class="doc icon"></i> A look at the Holidays</a>
         </div>
       </div>
-      <div class="two column row">
+      <div class="ui horizontal section divider"><i class="icon globe"></i></div>
+      <div class="two column center row">
         <div class="column">
-          <h2>Interact directly with certified investment professionals</h2>
+          <h2 class="ui header">
+            Interact directly with certified investment professionals
+          </h2>
           <p>
             Among the credentials that financial professionals may hold, none are more highly
-            regarded than, or as rigorously focused on investment knowledge, as the Chartered
-            Financial Analyst designation.
-            <br />
-            <br />
+            regarded than, or as rigorously focused on investment knowledge, as the <b>Chartered
+            Financial Analyst</b> designation.
+          </p>
+          <p>
             With over 30 years of experience, your portfolio manager, Thomas Lukic will work
             directly with you in designing, tailoring and managing your portfolio.
           </p>
         </div>
         <div class="column">
-          <h2>We share your goals</h2>
+          <h2 class="ui header">We share your goals</h2>
           <p>
             Our disciplined and thorough approach to long-term value investing are intrinsically tied
             and we enjoy the commonality of interests that makes our job so simple.
