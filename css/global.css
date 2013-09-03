@@ -10,12 +10,17 @@ html, body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, .menu, nav, header p {
-  Font-family: 'Montserrat', serif;
+h1, h2, h3, h4, h5, header p {
+  Font-family: 'Quattrocento', serif;
   text-rendering: optimizeLegibility;
 }
 
-body {
+nav{
+ Font-family: 'Montserrat', serif;
+  text-rendering: optimizeLegibility;
+}
+
+body, .menu {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility;
@@ -34,8 +39,8 @@ body > .page {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -239px;
-  padding: 0px 0px 239px;
+  margin: 0 auto -45px;
+  padding: 0px 0px 45px;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -49,7 +54,7 @@ body > .page > .content {
 }
 
 body > footer {
-  height: 239px;
+  height: 45px;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,14 +62,17 @@ body > footer {
   box-sizing: border-box;
 }
 
-header .grid,
-footer.grid {
+header .grid{
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
 .next.segment {
   display: inline-block;
+}
+
+i.icon {
+  text-decoration: none;
 }
 
 
@@ -113,7 +121,7 @@ h2 {
   color: #B55400;
 }
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 h4 {
   font-size: 1.1rem;
@@ -240,6 +248,8 @@ h5 {
 
 footer.grid {
   background-color: #595959;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   color: #EFEFEF;
   width: 100%;
 }
@@ -257,17 +267,16 @@ footer a:hover {
   color: #FFFFFF;
 }
 footer p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
 }
 footer span {
   display: inline-block;
-  font-size: 14px;
-  margin-bottom: 3px;
+  font-size: 12px;
 }
 
 footer .ui.sitemap > .section {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /*******************************
