@@ -4,13 +4,13 @@
   width: 100%;
 }
 header address {
-  font-size: 12px;
+  font-size: 0.8rem;
   text-align: right;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.4);
 }
 header img {
-  max-width: 9999px;
+  max-width: 500px;
 }
 header nav  {
   padding-top: 10px !important;
@@ -22,7 +22,7 @@ header nav {
 header nav a {
   color: rgba(0, 0, 0, 0.5);
   margin-right: 25px;
-  font-size: 14px;
+  font-size: 0.9em;
   text-decoration: none;
 
   -webkit-transition: color 0.2s ease;

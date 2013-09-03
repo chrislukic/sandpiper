@@ -4,7 +4,7 @@
 *******************************/
 
 html, body {
-  font-size: 16px;
+  font-size: 15px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -62,8 +62,9 @@ footer.grid {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
-.segment {
-  background-color: #DEDEDE !important;
+
+.next.segment {
+  display: inline-block;
 }
 
 
@@ -138,7 +139,7 @@ h5 {
 }
 .banner .callout {
   position:  absolute;
-  top: 215px;
+  top: 155px;
   right: 6%;
   padding: 25px 40px;
   background-color:  #b55400;
@@ -233,16 +234,21 @@ h5 {
 }
 
 
+/*******************************
+             Footer
+*******************************/
+
 footer.grid {
   background-color: #595959;
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
   color: #EFEFEF;
   width: 100%;
 }
 footer a, footer ul li a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+footer address {
+  font-size: 14px;
 }
 footer h3 {
   margin-top: 0em;
@@ -265,6 +271,18 @@ footer .ui.sitemap > .section {
 }
 
 /*******************************
+             Home
+*******************************/
+
+#home header img {
+  margin-top: 15px;
+}
+#home address {
+  margin-top: 20px;
+}
+
+
+/*******************************
             About
 *******************************/
 
@@ -281,6 +299,11 @@ footer .ui.sitemap > .section {
   color:#666;
   margin-top:0;
 }
+
+
+/*******************************
+            Contact
+*******************************/
 
 #contact .wrap iframe{
   margin:25px 0;
