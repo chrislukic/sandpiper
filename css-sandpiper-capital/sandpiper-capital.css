@@ -2,6 +2,10 @@
 body{background-color:#efefef;font-family:'Open Sans',sans-serif;letter-spacing:.03em;text-rendering:optimizeLegibility;min-width:960px;}
 
 
+#about .content, #services .content{margin-top:25px;}
+#about .content h3{color:#B55400;font-size:16px;font-weight:bold;margin-top:25px;}
+#about .content h3 + p{color:#666;font-size:12px;margin-top:0;}
+
 .banner{letter-spacing:.03em;height:400px;overflow:hidden;}
 .banner img{margin-top:-285px;}
 .banner .callout{position: absolute;left: 0px;top:493px;padding:8px 20px;background-color: #b55400;width:595px;}
@@ -38,9 +42,6 @@ body{background-color:#efefef;font-family:'Open Sans',sans-serif;letter-spacing:
 .content .sidebar ul li a:hover{color:#555;}
 .content .sidebar ul{margin-top:10px;}
 .content .sidebar ul li{margin:0 0 6px 0;}
-
-
-#services .content h1{background-color:#B55400;color:#ffffff;font-size:20px;font-weight:bold;margin-right:15px;padding:20px;}
 
 
 footer{background:linear-gradient(to bottom, #666666 16%, #595959 100%) repeat scroll 0 0 transparent;color:#efefef;width:100%;}
