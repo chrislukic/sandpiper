@@ -5,7 +5,6 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/semantic/collections/grid.min.css" />
-  <link rel="stylesheet" href="css/semantic/collections/list.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/header.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/segment.min.css" />
   <link rel="stylesheet" href="css/reset.css" />
@@ -14,23 +13,24 @@
 </head>
 <body id="home">
   <header>
-    <div class="ui responsive grid">
+    <div class="ui responsive padded grid">
       <div class="ui sixteen column">
         <div itemscope itemtype="http://schema.org/LocalBusiness">
-          <h1 class="five wide left floated column">
+          <div class="five wide left floated column">
             <a href="http://sandpiper-capital" alt="Sandpiper Capital">
               <img src="images/sandpiper-logo276x40.png" />
             </a>
-          </h1>
+          </div>
           <div class="five wide right floated column">
             <p>
-              <span itemprop="street-address">1613 Laskin Road, Suite 200</b><br />
-              <span itemprop="locality">Virginia Beach</b>, <span itemprop="region">VA</b>
-              <span itemprop="postal-code">23454</b><br />
-              <span itemprop="tel">(757) 962-4596</b> <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+              <span itemprop="street-address">1613 Laskin Road, Suite 200</span><br />
+              <span itemprop="locality">Virginia Beach</span>, <span itemprop="region">VA</span>
+              <span itemprop="postal-code">23454</span><br />
+              <span itemprop="tel">(757) 962-4596</span>
+              <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
               <meta itemprop="latitude" content="36.850827" />
               <meta itemprop="longitude" content="-76.018237" />
-            </b>
+            </p>
           </p>
         </div>
       </div>
@@ -38,13 +38,11 @@
   </div>
   <nav class="ui responsive grid">
     <div class="ui sixteen wide column">
-      <div class="wrap">
-        <a class="active" href="x-sandpiper.htm">Home</a>
-        <a href="/about">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="/insights">Investor Insight</a>
-        <a href="/contact">Contact Us</a>
-      </div>
+      <a class="active" href="index.html">Home</a>
+      <a href="/about">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="/insights">Investor Insight</a>
+      <a href="/contact">Contact Us</a>
     </div>
   </nav>
 </header>
@@ -173,33 +171,30 @@
   </div>
 </div>
 <footer class="ui responsive grid">
-  <div class="ui sixteen column">
-    <div class="wrap">
-      <div class="six wide left floated column">
-        <p itemscope itemtype="http://schema.org/LocalBusiness">
-          <span itemprop="name" style="font-weight: bold;">Sandpiper Capital</b><br />
-          <span itemprop="street-address">1613 Laskin Road, Suite 200</b><br />
-          <span itemprop="locality">Virginia Beach</b>, <span itemprop="region">VA</b>
-          <span itemprop="postal-code">23454</b><br />
-          Phone: <span itemprop="tel">(757) 962-4596</b><br />
-          Fax: <span>(757) 962-5038</b><br />
-          <span itemprop="tel">866-634-9529</b><br />
-          <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
-            <meta itemprop="latitude" content="36.850827" />
-            <meta itemprop="longitude" content="-76.018237" />
-          </b><a itemprop="email" href="mailto:inquiries@sandpiper-capital.com">Email</a>
-        </p>
-      </div>
-      <div class="five wide left floated column">
-        <p><b>Latest Market Gleanings</b></p>
-        <ul>
-          <li><a href="#" target="_blank">Blog post 1</a></li>
-          <li><a href="#" target="_blank">Blog post 2</a></li>
-          <li><a href="#" target="_blank">Blog post 3</a></li>
-          <li><a href="#" target="_blank">Blog post 4</a></li>
-          <li><a href="#" target="_blank">Blog post 5</a></li>
-        </ul>
-      </div>
+  <div class="six wide left floated column">
+    <p itemscope itemtype="http://schema.org/LocalBusiness">
+      <span itemprop="name" style="font-weight: bold;">Sandpiper Capital</span><br />
+      <span itemprop="street-address">1613 Laskin Road, Suite 200</span><br />
+      <span itemprop="locality">Virginia Beach</span>, <span itemprop="region">VA</span>
+      <span itemprop="postal-code">23454</span><br />
+      Phone: <span itemprop="tel">(757) 962-4596</span><br />
+      Fax: <span>(757) 962-5038</span><br />
+      <span itemprop="tel">866-634-9529</span><br />
+      <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+        <meta itemprop="latitude" content="36.850827" />
+        <meta itemprop="longitude" content="-76.018237" />
+      </span>
+      <a itemprop="email" href="mailto:inquiries@sandpiper-capital.com">Email</a>
+    </p>
+  </div>
+  <div class="five wide left floated column">
+    <h3>Latest Market Gleanings</h3>
+    <div class="ui selection list">
+      <div class="item"><a href="#" target="_blank">Blog post 1</a></div>
+      <div class="item"><a href="#" target="_blank">Blog post 2</a></div>
+      <div class="item"><a href="#" target="_blank">Blog post 3</a></div>
+      <div class="item"><a href="#" target="_blank">Blog post 4</a></div>
+      <div class="item"><a href="#" target="_blank">Blog post 5</a></div>
     </div>
   </div>
 </footer>
