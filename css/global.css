@@ -1,4 +1,13 @@
-﻿h1, h2, h3, h4, h5, header a {
+﻿
+/*******************************
+            Global
+*******************************/
+
+html, body {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, header a {
   font-family: 'Quattrocento',serif;
   letter-spacing: .04em;
   text-rendering: optimizeLegibility;
@@ -11,6 +20,13 @@ body {
   min-width: 960px;
 }
 
+p {
+  line-height: 1.5;
+}
+
+/*******************************
+             Banner
+*******************************/
 
 .banner {
   letter-spacing: .03em;
@@ -34,22 +50,13 @@ body {
   font-size: 20px;
   padding-bottom: 10px;
 }
-/*.banner h2 span a {
-color: #dedede;
-font-family: Open Sans,sans-serif;
-font-weight: normal;
-font-size: 14px;
-margin-left: 15px;
-text-decoration: none;
-}
-.banner h2 span a: hover {
-  color: #ffffff;
-  }*/
 .banner p, .content .wrap .item p {
-  font-size: 14px;
   color: #eee;
 }
 
+/*******************************
+          Home Content
+*******************************/
 
 .content {
   margin-top: 75px;
@@ -65,14 +72,13 @@ text-decoration: none;
   box-sizing: border-box;
   border-top: 1px solid #b55400;
 
-                    border-left: 1px solid #b55400;
-                    border-right: 1px solid #b55400;
-                    border-bottom: 3px solid #b55400;
-                    font-size: 13px;
+  border-left: 1px solid #b55400;
+  border-right: 1px solid #b55400;
+  border-bottom: 3px solid #b55400;
 
-                    padding: 10px 20px;
-                    width: 618px;
-                  }
+  padding: 10px 20px;
+  width: 618px;
+}
 .content h2 {
   border-bottom: 1px dotted rgba(181, 84, 0,.5);
   color: #B55400;
@@ -80,19 +86,16 @@ text-decoration: none;
   font-weight: bold;
   min-width: 625px;
   padding-top: 10px;
-
-            padding-bottom: 4px;
-          }
+  padding-bottom: 4px;
+}
 .content p {
   margin: 15px 0;
-  font-size: 13px;
   line-height: 20px;
 }
 .content ul {
   margin-bottom: 25px;
 }
 .content ul li {
-  font-size: 13px;
   line-height: 20px;
   list-style-type: square;
   margin: 15px 0px 15px 45px;
@@ -104,6 +107,7 @@ text-decoration: none;
 .content ul li a: hover {
   color: #e86c00;
 }
+
 
 .cta {
   background-color: #dedede;
@@ -123,6 +127,9 @@ text-decoration: none;
   color: #cf6006;
 }
 
+/*******************************
+            Sidebar
+*******************************/
 
 .sidebar {
   background-color: #dedede;
@@ -132,7 +139,6 @@ text-decoration: none;
 }
 .sidebar h3 {
   color: #B55400;
-  font-size: 14px;
   font-weight: bold;
 }
 .sidebar ul li {
@@ -164,7 +170,6 @@ footer {
   width: 100%;
 }
 footer p, footer ul li {
-  font-size: 12px;
   letter-spacing: .03em;
 }
 footer a, footer ul li a {
