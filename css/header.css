@@ -3,27 +3,26 @@
   color: #555555;
   width: 100%;
 }
-header p {
+header address {
   font-size: 12px;
-  letter-spacing: .03em;
   text-align: right;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.4);
 }
-header .wrap {
-  padding-top: 15px;
-  padding-bottom: 15px;
+header img {
+  max-width: 9999px;
 }
-header nav .wrap {
-  padding-top: 10px;
-  padding-bottom: 10px;
+header nav  {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 header nav {
-  background-color: #575757;
+  background-color: #DEC8A1;
 }
 header nav a {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  letter-spacing: .04em;
+  color: rgba(0, 0, 0, 0.5);
   margin-right: 25px;
+  font-size: 14px;
   text-decoration: none;
 
   -webkit-transition: color 0.2s ease;
@@ -35,7 +34,8 @@ header nav a {
 header nav a:hover {
   color: #FFFFFF;
 }
-nav .active {
-  color: #FFFFFF;
-  border-bottom: 2px solid #dec8a1;
+nav .active,
+nav .active:hover {
+  color: #B55400;
+  border-bottom: 2px solid #B55400;
 }
