@@ -15,6 +15,10 @@ body{background-color:#efefef;font-family:'Open Sans',sans-serif;letter-spacing:
 .banner p, .content .wrap .item p{font-size:14px;color:#eee;}
 
 
+#contact .wrap iframe{margin:25px 0;padding:0 15px;}
+#contact .content a{color:#B55400;}
+
+
 #home .content{margin-top:75px;letter-spacing:.03em;}
 .content .wrap, footer .wrap{padding-top:15px;padding-bottom:15px;}
 .content blockquote{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-top:1px solid #b55400;
