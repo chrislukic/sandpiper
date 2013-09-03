@@ -281,3 +281,11 @@ footer .ui.sitemap > .section {
   color:#666;
   margin-top:0;
 }
+
+#contact .wrap iframe{
+  margin:25px 0;
+  padding:0 15px;
+}
+#contact .content a {
+  color: #B55400;
+}
