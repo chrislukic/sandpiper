@@ -10,7 +10,7 @@ html, body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, .menu, header p {
+h1, h2, h3, h4, h5, header p {
   Font-family: 'Quattrocento', serif;
   text-rendering: optimizeLegibility;
 }
@@ -20,7 +20,7 @@ nav{
   text-rendering: optimizeLegibility; 
 }
 
-body {
+body, .menu {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizeLegibility;
@@ -39,8 +39,8 @@ body > .page {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -50px;
-  padding: 0px 0px 50px;
+  margin: 0 auto -45px;
+  padding: 0px 0px 45px;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -54,7 +54,7 @@ body > .page > .content {
 }
 
 body > footer {
-  height: 50px;
+  height: 45px;
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -62,8 +62,7 @@ body > footer {
   box-sizing: border-box;
 }
 
-header .grid,
-footer.grid {
+header .grid{
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
@@ -117,7 +116,7 @@ h2 {
   color: #B55400;
 }
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 h4 {
   font-size: 1.1rem;
@@ -240,8 +239,8 @@ h5 {
 
 footer.grid {
   background-color: #595959;
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   color: #EFEFEF;
   width: 100%;
 }
