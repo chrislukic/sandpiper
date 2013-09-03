@@ -1,13 +1,12 @@
 ﻿header {
-  background-color:  #FFFFFF;
-  color: #555555;
+  background: linear-gradient(#666 16%, #595959 100%);
   width: 100%;
 }
 header address {
   font-size: 12px;
   text-align: right;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.6);
+  color: #efefef;
 }
 header img {
   max-width: 9999px;
@@ -17,10 +16,10 @@ header nav  {
   padding-bottom: 10px !important;
 }
 header nav {
-  background-color: #DEC8A1;
+  background-color: #565656;
 }
 header nav a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #ddd;
   margin-right: 25px;
   font-size: 14px;
   text-decoration: none;
@@ -36,6 +35,6 @@ header nav a:hover {
 }
 nav .active,
 nav .active:hover {
-  color: #B55400;
-  border-bottom: 2px solid #B55400;
+  color: #fff;
+  border-bottom: 2px solid #dec8a1;
 }
