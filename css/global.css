@@ -211,7 +211,7 @@ h5 {
 
 
 .cta {
-  background-color: #dedede;
+  background-color: #FAF9F9;
   padding: 5px 25px;
 }
 .cta img {
@@ -231,7 +231,7 @@ h5 {
 *******************************/
 
 .sidebar {
-  background-color: #DEDEDE;
+  background-color: #FAF9F9;
   padding: 15px;
 }
 .sidebar h3 {
@@ -272,17 +272,13 @@ footer a, footer ul li a {
   text-decoration: none;
 }
 footer address {
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 footer h3 {
   margin-top: 0em;
 }
 footer a:hover {
   color: #FFFFFF;
-}
-footer p {
-  font-size: 12px;
-  line-height: 1.6;
 }
 footer span {
   display: inline-block;
@@ -311,7 +307,7 @@ footer .ui.sitemap > .section {
 }
 
 #home .feature.grid {
-  background-color: #EAEAEA;
+  background-color: #FAF9F9;
   margin: 30px 0;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -334,7 +330,7 @@ footer .ui.sitemap > .section {
   margin-top:25px;
 }
 #about .content h3 + p {
-  color:#666;
+  color:#666666;
   margin-top:0;
 }
 

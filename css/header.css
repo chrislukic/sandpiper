@@ -41,8 +41,9 @@ nav .active:hover {
 }
 
 header nav img {
-  display: inline-block;
-  margin: 2px 35px 0px 0px !important;
+  display: none;
+  float: right;
+  margin: 0px 0px -1px 0px !important;
   vertical-align: top;
   -webkit-transition: width 0.2s ease;
   -moz-transition: width 0.2s ease;
@@ -62,4 +63,5 @@ nav.affix + .placeholder {
   height: 49px;
 }
 header nav.affix img {
+  display: block;
 }
