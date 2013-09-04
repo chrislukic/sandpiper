@@ -1,0 +1,113 @@
+﻿header {
+  background-color:  #FFFFFF;
+  color: #555555;
+  width: 100%;
+}
+header address {
+  font-size: 0.8rem;
+  text-align: right;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+}
+header img {
+  max-width: 415px;
+}
+header nav  {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+header nav {
+  background-color: #EFEFEF;
+}
+header nav a {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 35px;
+  text-decoration: none;
+
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+header nav a:hover {
+  color: #222222;
+}
+nav .active,
+nav .active:hover {
+  color: #B55400;
+  border-bottom: 2px solid #B55400;
+}
+
+header nav img {
+  display: none;
+  float: right;
+  margin: 0px 0px -1px 0px !important;
+  vertical-align: top;
+  -webkit-transition: width 0.2s ease;
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  -ms-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+/*******************************
+             Fixed
+*******************************/
+
+nav.affix {
+  background-color: #222222;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+nav.affix + .placeholder {
+  display: block;
+  height: 49px;
+}
+
+header nav.affix img {
+  display: block;
+}
+header nav.affix a {
+  color: rgba(255, 255, 255, 0.6);
+}
+header nav.affix a:hover {
+  color: #FFFFFF;
+}
+header nav.affix a.active {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/*******************************
+           Mobile Menu
+*******************************/
+
+header .mobile {
+  cursor: pointer;
+  display: none;
+
+  -webkit-transition: 0.2s color ease;
+  -moz-transition: 0.2s color ease;
+  -o-transition: 0.2s color ease;
+  -ms-transition: 0.2s color ease;
+  transition: 0.2s color ease;
+}
+header nav .mobile:hover {
+  color: #222222;
+}
+header nav.affix .mobile:hover {
+  color: #FFFFFF;
+}
+header .mobile.active {
+  border: none;
+}
