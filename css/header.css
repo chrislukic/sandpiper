@@ -41,8 +41,8 @@ header nav a:hover {
 }
 nav .active,
 nav .active:hover {
-  color: #B55400;
-  border-bottom: 2px solid #B55400;
+  color: #8D2C2C;
+  border-bottom: 2px solid #8D2C2C;
 }
 
 header nav img {

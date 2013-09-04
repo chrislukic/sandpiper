@@ -64,8 +64,8 @@ body > footer {
 }
 
 header .grid{
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .next.segment {
@@ -160,17 +160,18 @@ header .banner {
   position: relative;
 }
 .banner .text {
-  padding-left: 265px;
+  padding-left: 180px;
   opacity: 0;
 }
 .banner .text.visible {
   opacity: 1;
 }
 .banner img {
-  display: none;
-  left: 0px;
-  bottom: -45px;
   position: absolute;
+  display: none;
+  top: -12.5%;
+  height: 125%;
+  left: 0px;
 }
 .banner p, .content .item p {
   margin: 1em 0em 0em;
@@ -183,13 +184,13 @@ header .banner {
 *******************************/
 
 .ui.button {
-  background-color: #C66511;
+  background-color: #792D2D;
   color: #FFFFFF;
   text-decoration: none;
 }
 .ui.button:hover,
 .ui.button:active {
-  background-color: #DB6C0C;
+  background-color: #8D2C2C;
 }
 
 
@@ -199,7 +200,7 @@ header .banner {
 *******************************/
 
 .content a {
-  color: #C66511;
+  color: #792D2D;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
@@ -207,7 +208,7 @@ header .banner {
   transition: color 0.2s ease;
 }
 .content a:hover {
-  color: #DB6C0C;
+  color: #B93333;
 }
 .content blockquote {
   -webkit-box-sizing: border-box;
@@ -215,7 +216,7 @@ header .banner {
   box-sizing: border-box;
 
   background-color: #FAFAFA;
-  border-left: 3px solid #C66511;
+  border-left: 3px solid #792D2D;
   font-size: 1.33em;
   font-style: italic;
   color: rgba(0, 0, 0, 0.7);
@@ -235,7 +236,7 @@ header .banner {
   margin: 0;
 }
 .content ul li a {
-  color: #C66511;
+  color: #792D2D;
   text-decoration: none;
 }
 .content ul li a: hover {
@@ -263,7 +264,7 @@ header .banner {
   padding-top: 15px;
 }
 .cta a {
-  color: #C66511;
+  color: #792D2D;
   text-decoration: none;
 }
 .cta a:hover {
@@ -279,7 +280,7 @@ header .banner {
   padding: 15px;
 }
 .sidebar h3 {
-  color: #C66511;
+  color: #792D2D;
   font-weight: bold;
 }
 .sidebar ul li {
@@ -292,7 +293,7 @@ header .banner {
 *******************************/
 
 .content b {
-  color: #C66511;
+  color: #8D2C2C;
 }
 .content .sidebar ul li a {
   color: #000;
@@ -384,6 +385,16 @@ footer .ui.sitemap > .section {
   margin-top:0;
 }
 
+#about h2 {
+  margin-top: 0em;
+}
+#about .left.image {
+  margin-right: 3em;
+}
+#about .right.image {
+  margin-left: 3em;
+}
+
 
 /*******************************
             Contact
@@ -394,5 +405,5 @@ footer .ui.sitemap > .section {
   padding:0 15px;
 }
 #contact .content a {
-  color: #C66511;
+  color: #792D2D;
 }
