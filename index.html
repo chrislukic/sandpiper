@@ -6,6 +6,7 @@
   <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+  <link rel="stylesheet" href="css/semantic/modules/transition.min.css" />
   <link rel="stylesheet" href="css/semantic/collections/grid.min.css" />
   <link rel="stylesheet" href="css/semantic/collections/menu.min.css" />
   <link rel="stylesheet" href="css/semantic/views/list.min.css" />
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="css/semantic/elements/header.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/divider.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/icons.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/image.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/segment.min.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/global.css" />
@@ -20,6 +22,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/affix.js"></script>
+  <script src="css/semantic/modules/transition.min.js"></script>
   <script type="text/javascript">
     $(document)
       .ready(function() {
@@ -31,6 +34,7 @@
             }
           })
         ;
+        $('.ui.dropdown').dropdown({ on: 'hover'});
       })
     ;
   </script>
@@ -39,7 +43,7 @@
 <div class="page">
   <header>
     <div class="ui responsive padded grid">
-      <div itemscope itemtype="http://schema.org/LocalBusiness">
+      <div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
         <div class="five wide left floated column">
           <a href="http://sandpiper-capital.com" alt="Sandpiper Capital">
             <img src="images/logo-large.jpg" />
@@ -150,7 +154,7 @@
     </div>
     <div class="ui responsive feature grid">
       <div class="row">
-        <div class="seven wide right floated column">
+        <div class="seven wide left floated column">
           <h2 class="ui header">
             Interact directly with certified investment professionals
           </h2>
@@ -164,7 +168,7 @@
             directly with you in designing, tailoring and managing your portfolio.
           </p>
         </div>
-        <div class="seven wide left floated column">
+        <div class="seven wide right floated column">
           <h2 class="ui header">We share your goals</h2>
           <p>
             Our disciplined and thorough approach to long-term value investing are intrinsically tied
@@ -185,6 +189,7 @@
             <p>
               At Sandpiper Capital, we believe the wisdom of the oft quoted maxim:
             </p>
+            <img src="images/notebook.png" class="medium right floated ui image">
             <blockquote>
               "In the short run the market is a voting machine, in the long run it’s a weighing
               machine."
@@ -219,7 +224,7 @@
     <!--https://support.google.com/webmasters/answer/146861-->
     <address itemscope itemtype="http://schema.org/LocalBusiness">
       <div class="left">
-        <span itemprop="name" style="font-weight:bold;">Sandpiper Capital</span> —
+        <span itemprop="name">Sandpiper Capital</span> —
         <span itemprop="street-address">1613 Laskin Road, Suite 200</span> -
         <span itemprop="locality">Virginia Beach</span>,
         <span itemprop="region">VA</span>
@@ -231,7 +236,7 @@
           <meta itemprop="latitude" content="36.850827" />
           <meta itemprop="longitude" content="-76.018237" />
         </span>
-        <a itemprop="email" href="mailto:inquiries@sandpiper-capital.com">Contact</a>
+        <a itemprop="email" href="mailto:inquiries@sandpiper-capital.com">E-mail</a>
       </div>
     </address>
   </div>
