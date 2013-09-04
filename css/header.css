@@ -13,8 +13,8 @@ header img {
   max-width: 415px;
 }
 header nav  {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 
   -webkit-transition: background-color 0.2s ease;
   -moz-transition: background-color 0.2s ease;
