@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+
+  <meta name="viewport" content="width=device-width, user-scalable=false;">
+  <title>Sandpiper Capital</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/semantic/modules/transition.min.css" />
   <link rel="stylesheet" href="css/semantic/collections/grid.min.css" />
   <link rel="stylesheet" href="css/semantic/collections/menu.min.css" />
+  <link rel="stylesheet" href="css/semantic/collections/form.min.css" />
   <link rel="stylesheet" href="css/semantic/views/list.min.css" />
   <link rel="stylesheet" href="css/semantic/views/sitemap.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/header.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/divider.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/icons.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/button.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/input.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/image.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/segment.min.css" />
+
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
   <script src="js/jquery.js"></script>
   <script src="js/affix.js"></script>
+  <script src="css/semantic/modules/transition.min.js"></script>
   <script type="text/javascript">
     $(document)
       .ready(function() {
@@ -26,6 +38,11 @@
               top    : $('nav.grid').offset().top,
               bottom : $('footer').outerHeight(true)
             }
+          })
+        ;
+        $('nav .mobile')
+          .on('click', function() {
+            $(this).toggleClass('active').next().transition('fade down');
           })
         ;
       })
@@ -58,29 +75,69 @@
     </div>
     <nav class="ui responsive grid">
       <div class="ui sixteen wide column">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="insights.html">Investor Insight</a>
-        <a class="active" href="contact.html">Contact Us</a>
+        <img src="images/sandpiper-icon.png">
+        <div class="mobile">
+          Menu <i class="content icon link"></i>
+        </div>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="insights.html">Investor Insight</a>
+          <a class="active" href="contact.html">Contact Us</a>
+        </div>
       </div>
     </nav>
     <div class="placeholder"></div>
   </header>
   <div class="content">
-    <div class="ui responsive grid">
-      <div class="ui ten wide floated left column">
-        <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1613+Laskin+Road,+Suite+200+Virginia+Beach,+VA+23454&amp;aq=&amp;sll=36.795669,-76.012628&amp;sspn=0.775276,1.073914&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1613+Laskin+Rd+%23200,+Virginia+Beach,+Virginia+23451&amp;ll=36.852359,-76.017666&amp;spn=0.032967,0.054932&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1613+Laskin+Road,+Suite+200+Virginia+Beach,+VA+23454&amp;aq=&amp;sll=36.795669,-76.012628&amp;sspn=0.775276,1.073914&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1613+Laskin+Rd+%23200,+Virginia+Beach,+Virginia+23451&amp;ll=36.852359,-76.017666&amp;spn=0.032967,0.054932&amp;z=14" style="color:#B55400;font-size:12px;padding-left:15px;text-align:left;">View Larger Map</a></small>
+    <div class="ui stackable responsive grid">
+      <div class="ui ten wide column">
+        <h2>Contact Form</h2>
+        <p>You can use the form below to contact us and we'll get back to you shortly.</p>
+        <script language="javascript">var sa_email_id = '6870-41e67';var sa_sent_text = 'Thank you for contacting us. We will get back to you soon.';</script>
+        <script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js"></script>
+        <div id="sa_contactdiv">
+        <form name="sa_htmlform" class="ui form" onsubmit="return sa_contactform()">
+          <div class="field">
+            <label>Name</label>
+            <div class="ui right icon input">
+              <input type="text" name="name" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <label>E-mail</label>
+            <input type="text" name="email" />
+          </div>
+          <div class="field">
+            <label>Subject</label>
+            <input type="text" name="subject" />
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea name="message" cols="42" rows="9" required="true"></textarea>
+          </div>
+          <div class="ui button" onclick="$(this).closest('form').submit();">Contact Us</div>
+        </form>
+        </div>
       </div>
-      <div class="ui five wide floated right column" style="margin-top:25px;">
-        <h2>Contact Details</h2>
-        <p>
-          Thomas Lukic
-          <br/>
-          (757) 962-4596
-          <br/>
-          <a href="mailto:inquiries@sandpiper-capital.com">inquiries@sandpiper-capital.com</a>
-        </p>
+      <div class="ui five wide floated right column">
+        <div class="ui segment">
+          <h3>Prefer to reach out directly?</h3>
+          <p>Call us or e-mail anytime to chat about your financial future</p>
+          <p>
+            <br/>
+            (757) 962-4596
+            <br/>
+            <a href="mailto:inquiries@sandpiper-capital.com">inquiries@sandpiper-capital.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="ui sixteen wide column">
+        <div class="ui section divider"></div>
+        <h2>Office Locations</h2>
+        <iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1613+Laskin+Road,+Suite+200+Virginia+Beach,+VA+23454&amp;aq=&amp;sll=36.795669,-76.012628&amp;sspn=0.775276,1.073914&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1613+Laskin+Rd+%23200,+Virginia+Beach,+Virginia+23451&amp;ll=36.852359,-76.017666&amp;spn=0.032967,0.054932&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1613+Laskin+Road,+Suite+200+Virginia+Beach,+VA+23454&amp;aq=&amp;sll=36.795669,-76.012628&amp;sspn=0.775276,1.073914&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1613+Laskin+Rd+%23200,+Virginia+Beach,+Virginia+23451&amp;ll=36.852359,-76.017666&amp;spn=0.032967,0.054932&amp;z=14" style="color:#B55400;font-size:12px;padding-left:15px;text-align:left;">View Larger Map</a></small>
       </div>
     </div>
   </div>
@@ -88,19 +145,23 @@
 <footer class="ui responsive grid">
   <div class="ui sixteen wide column">
     <!--https://support.google.com/webmasters/answer/146861-->
-    <p itemscope itemtype="http://schema.org/LocalBusiness">
-      <span itemprop="name" style="font-weight:bold;">Sandpiper Capital</span> |
-      <span itemprop="street-address">1613 Laskin Road, Suite 200</span> |
-      <span itemprop="locality">Virginia Beach</span>,
-      <span itemprop="region">VA</span>
-      <span itemprop="postal-code">23454</span> |
-      Phone: <span itemprop="tel">(757) 962-4596</span> |
-      <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
-        <meta itemprop="latitude" content="36.850827" />
-        <meta itemprop="longitude" content="-76.018237" />
-      </span>
-      <a itemprop="email" href="mailto:inquiries@sandpiper-capital.com">Email</a>
-    </p>
+    <address itemscope itemtype="http://schema.org/LocalBusiness">
+      <div class="left">
+        <span itemprop="name">Sandpiper Capital</span> —
+        <span itemprop="street-address">1613 Laskin Road, Suite 200</span> -
+        <span itemprop="locality">Virginia Beach</span>,
+        <span itemprop="region">VA</span>
+        <span itemprop="postal-code">23454</span>
+      </div>
+      <div class="right">
+        Phone: <span itemprop="tel">(757) 962-4596</span>
+        <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+          <meta itemprop="latitude" content="36.850827" />
+          <meta itemprop="longitude" content="-76.018237" />
+        </span>
+        <a itemprop="email" href="mailto:inquiries@sandpiper-capital.com">E-mail</a>
+      </div>
+    </address>
   </div>
 </footer>
 </body>

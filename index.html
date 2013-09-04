@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  <title>Sandpiper Capital</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/semantic/modules/transition.min.css" />
   <link rel="stylesheet" href="css/semantic/collections/grid.min.css" />
@@ -14,11 +15,14 @@
   <link rel="stylesheet" href="css/semantic/elements/header.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/divider.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/icons.min.css" />
+  <link rel="stylesheet" href="css/semantic/elements/button.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/image.min.css" />
   <link rel="stylesheet" href="css/semantic/elements/segment.min.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 
   <script src="js/jquery.js"></script>
   <script src="js/affix.js"></script>
@@ -26,6 +30,7 @@
   <script type="text/javascript">
     $(document)
       .ready(function() {
+
         $('nav.grid')
           .affix({
             offset: {
@@ -34,7 +39,17 @@
             }
           })
         ;
-        $('.ui.dropdown').dropdown({ on: 'hover'});
+        $('nav .mobile')
+          .on('click', function() {
+            $(this).toggleClass('active').next().transition('fade down');
+          })
+        ;
+        setTimeout(function(){
+          $('.banner .text').transition('fade in');
+        }, 1500);
+        setTimeout(function(){
+          $('.banner img').transition('slide up');
+        }, 500);
       })
     ;
   </script>
@@ -62,26 +77,33 @@
         </div>
       </div>
     </div>
-    <div class="banner center">
-      <!--http://tau0.wordpress.com/tag/beach/-->
-      <div class="callout">
-        <!-- <span><a href="#" target="_blank">>> Download our Factsheet</a></b> -->
-        <h2>
-          Objective, Strategic, and Disciplined
-        </h2>
-        <p>
-          Effective investment management services that focus on long-term results with risk management as our top priority.
-        </p>
+    <div class="banner ui responsive grid">
+      <div class="column">
+        <img src="images/bar.png">
+        <div class="text">
+          <h1>Virginia's Premiere Financial Advisors</h1>
+          <p>
+            Sandpiper Capital was founded with the philosophy of bringing professional day-to-day
+            portfolio management to households that have previously been excluded by the million
+            dollar account minimums traditionally applied.
+          </p>
+          <a href="services.html" class="ui large right labeled icon button">Learn More <i class="right arrow icon"></i></a>
+        </div>
       </div>
     </div>
     <nav class="ui responsive grid">
       <div class="ui sixteen wide column">
         <img src="images/sandpiper-icon.png">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="insights.html">Investor Insight</a>
-        <a href="contact.html">Contact Us</a>
+        <div class="mobile">
+          Menu <i class="content icon link"></i>
+        </div>
+        <div class="links">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="insights.html">Investor Insight</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
       </div>
     </nav>
     <div class="placeholder"></div>
@@ -89,20 +111,16 @@
   <div class="content">
     <div class="ui responsive stackable grid">
       <div class="ui ten wide column">
-        <h1>Assertive investment management</h1>
-        <p>
-          Sandpiper Capital was founded with the philosophy of bringing professional day-to-day
-          portfolio management to households that have previously been excluded by the million
-          dollar account minimums traditionally applied.
-        </p>
+        <h2>Dependable Returns</h2>
         <p>
           Unlike transaction oriented financial
           services offered by banks, brokers, and insurance companies, we are fee-only Registered
           Financial Advisors, and are required by law to always act only in your best interest.
+        </p>
+        <p>
           Our mission is to dependably deliver effective portfolio management at low cost
           to non-profits and individuals who have made risk control a priority.
         </p>
-      <div class="ui section divider"></div>
         <h2>Investment models for both private and institutional clients</h2>
         <p>
           Proprietary tactical allocation models that actively manage risk and maximize potential
@@ -136,7 +154,6 @@
       </div>
       <div class="ui five wide right floated column">
         <div class="cta">
-          <img src="images/professionals-stock300x200.png" alt="Sandpiper Advisors" />
           <p>
             Call us at <b>(757) 962-4596</b> and personally speak
             with our investment advisors or <a href="mailto:inquiries@sandpiper-capital.com">email us</a>.
@@ -152,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="ui responsive feature grid">
+    <div class="ui stackable responsive feature grid">
       <div class="row">
         <div class="seven wide left floated column">
           <h2 class="ui header">
@@ -189,7 +206,7 @@
             <p>
               At Sandpiper Capital, we believe the wisdom of the oft quoted maxim:
             </p>
-            <img src="images/notebook.png" class="medium right floated ui image">
+            <img src="images/notebook.png" class="medium right floated ui notebook image">
             <blockquote>
               "In the short run the market is a voting machine, in the long run it’s a weighing
               machine."
