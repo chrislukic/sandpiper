@@ -10,7 +10,7 @@ header address {
   color: rgba(0, 0, 0, 0.6);
 }
 header img {
-  max-width: 500px;
+  max-width: 415px;
 }
 header nav  {
   padding-top: 10px !important;
@@ -23,12 +23,11 @@ header nav  {
   transition: background-color 0.2s ease;
 }
 header nav {
-  background-color: #DEC8A1;
+  background-color: #EFEFEF;
 }
 header nav a {
   color: rgba(0, 0, 0, 0.5);
   margin-right: 35px;
-  font-size: 0.9em;
   text-decoration: none;
 
   -webkit-transition: color 0.2s ease;
@@ -38,7 +37,7 @@ header nav a {
   transition: color 0.2s ease;
 }
 header nav a:hover {
-  color: #FFFFFF;
+  color: #222222;
 }
 nav .active,
 nav .active:hover {
@@ -63,7 +62,7 @@ header nav img {
 *******************************/
 
 nav.affix {
-  background-color: #B55400;
+  background-color: #222222;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -87,4 +86,28 @@ header nav.affix a:hover {
 header nav.affix a.active {
   color: #FFFFFF;
   border-color: #FFFFFF;
+}
+
+/*******************************
+           Mobile Menu
+*******************************/
+
+header .mobile {
+  cursor: pointer;
+  display: none;
+
+  -webkit-transition: 0.2s color ease;
+  -moz-transition: 0.2s color ease;
+  -o-transition: 0.2s color ease;
+  -ms-transition: 0.2s color ease;
+  transition: 0.2s color ease;
+}
+header nav .mobile:hover {
+  color: #222222;
+}
+header nav.affix .mobile:hover {
+  color: #FFFFFF;
+}
+header .mobile.active {
+  border: none;
 }
