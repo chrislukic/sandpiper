@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'sandpiper');
+define('DB_NAME', 'db488402846');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'dbo488402846');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'barbarbar');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db488402846.db.1and1.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'oe|,}guf!n2(%d|fZ@0E4+c~6|pH- I28X}UXe1yZzBikLC9X,m-J9Fwhe<)=^QC');
+define('SECURE_AUTH_KEY',  '--f*[-&.tG_s!_<fPYflR$XY{|rh-Tw TX@(ScW7Q<|Qdg@<%56qK&<8Y*!Hp@i=');
+define('LOGGED_IN_KEY',    '%E.H=1}u9%R>1tQy.{0l4K4Mq6EhK<a|^RKYOyOf<`(Cm3#eF|wT:-,?qLFHwrST');
+define('NONCE_KEY',        'j=+V;{Of=(+-TOB0~Rsg]3]+bY 8|?(lS1&D(bpJ `+#rG[^`}+9M3X=a73tWVRt');
+define('AUTH_SALT',        'ZKFLrR!Xcs.9Ctaf8LthJ(:Jg-8mv?Bq4W8847q@x_<|^1 H/B39<$_OGCsH+UUT');
+define('SECURE_AUTH_SALT', '<Y5Y={+G%Cnb:;ZuA({z>u:p!yusN3mu wfnQa0kuqd.@X4b{a3c+X#$yN+)}v+c');
+define('LOGGED_IN_SALT',   'l*I19T^ D$Wl__n=8xXl-84;5fT>WzU~,}#ImRXiEG]<#]4bG(@W|T|.2E6*L]lG');
+define('NONCE_SALT',       '9IR@n)+?=ZiFOmwO6b=.Qz*b)Wr$SH)m1BkmZIV$aWvi,UVR0`N])XjAmUe^be>n');
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'blog_';
 
 /**
  * WordPress Localized Language, defaults to English.
