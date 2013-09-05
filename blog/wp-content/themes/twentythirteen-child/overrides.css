@@ -1,0 +1,32 @@
+.page {
+  max-width: 100%;
+}
+.entry-header, .entry-content, .entry-summary, .entry-meta {
+  max-width: 100%;
+  margin: 0 1.5%;
+}
+@media only screen and (max-width : 1000px) {
+  .entry-header, .entry-content, .entry-summary, footer.entry-meta {
+    padding: 0% 5.55%;
+  }
+}
+@media only screen and (min-width : 1000px) {
+  .entry-header, .entry-content, .entry-summary, footer.entry-meta {
+    padding: 0% 8%;
+  }
+}
+@media only screen and (min-width : 1500px) {
+  .entry-header, .entry-content, .entry-summary, footer.entry-meta {
+    padding: 0% 13%;
+  }
+}
+@media only screen and (min-width : 1750px) {
+  .entry-header, .entry-content, .entry-summary, footer.entry-meta {
+    padding: 0% 18%;
+  }
+}
+@media only screen and (min-width : 2000px) {
+  .entry-header, .entry-content, .entry-summary, footer.entry-meta {
+    padding: 0% 23%;
+  }
+}
